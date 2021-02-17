@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+import React from 'react'
+import { useTheme, useThemeUpdate } from './ThemeContext'
+
+const Section = () => {
+  const darkTheme = useTheme()
+  const toggleTheme = useThemeUpdate()
+  const themeStyles = {
+    backgroundColor: darkTheme ? '#333' : '#ccc',
+    color: darkTheme ? '#ccc' : '#333'
+  }
+  return (
+    <div style={themeStyles}>
+      <button onClick={toggleTheme}> change theme </button>
+      hello world
+    </div>
+  )
+}
+
+export default Section

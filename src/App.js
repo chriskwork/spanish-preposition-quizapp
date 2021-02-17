@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './reset.css'
+import styled from 'styled-components';
+import { ThemeProvider } from './themeStyles/ThemeContext'
+
+// components
+import Header from './components/Header'
+import NavBar from './components/NavBar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+        <Container>
+          <Header>
+            <NavBar />
+          </Header>
+        </Container>
+    </ThemeProvider>
   );
 }
+
+const Container = styled.section`
+  width: 700px;
+  height: 700px;
+
+  @media (max-width: 700px) {
+    background-color: yellow;
+  }
+`
 
 export default App;
