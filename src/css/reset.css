@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 250ms;
+}
+
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 100%;
+}
+
+p,
+a {
+  /* font-size: 0.875rem; */
+  line-height: 1.5;
+}
+
+.max-width-container {
+  max-width: 1196px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-padding {
+  padding: 80px 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.spanish-text {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-align-c {
+  display: flex;
+  align-items: center;
+}

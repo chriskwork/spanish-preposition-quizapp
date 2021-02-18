@@ -96,3 +96,11 @@ const Section = () => {
 }
 
 export default Section
+
+pdf verb+prep 1
+https://drive.google.com/file/d/1zQ2KntIEHf0mGca8NYyCpr-jjFO3_dBU/view?usp=sharing
+2
+https://drive.google.com/file/d/1EWahnThv9TV0iAwvMWieylG73QYYICO7/view?usp=sharing
+
+zip 파일 (1,2 파일)
+https://drive.google.com/file/d/1C5GhUNN_5ZkmE0sDzpiRlQHDCI98UBfa/view?usp=sharing
