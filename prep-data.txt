@@ -203,7 +203,6 @@ Se puso a bailar a lo loco.
 Tenía tanta hambre que comió a lo bestia.
 그는 너무 배가 고팠기에 짐승처럼 먹었다.
 
-TODO: from here;
 
 a los / a las + tiempo
 
@@ -232,7 +231,9 @@ Mi hija a los dos años ya hablaba muy bien.
 A los treinta años yo vine a España.
 나는 30살 때 스페인에 왔다.
 
+TODO: (카드핀 3529)
 
+FIXME: expresion은 일단 패스!
 < expresiones >
 
 
@@ -634,7 +635,7 @@ Puedes cortarlo con las tijeras.
 Creo que puedo hacerlo con un dedo.
 한 손가락으로도 할 수 있을 것 같아.
 
-
+FIXME:
 < expresiones >
 
 
@@ -763,7 +764,7 @@ Con vistas al viaje, estoy ahorrando todo el dinero que pueda.
 * 공식 기록 등에 사용 됨 (= a finde / con el objeto de)
 * para + 목적: 일반적인 상황에서 더 많이 쓰이는 형식.
 
-
+FIXME: contra?
 contra + algo
 
 두 물체의 부딪힘. 맞서는 것.
@@ -848,6 +849,8 @@ Tiritó de nervios por el examen.
 시험 때문에 긴장되서 떨었다.
 Lloro de alegría por el aprobado de mi hijo.
 아들이 합격해서 기뻐서 우는거야.
+
+
 de + etapa de la vida (인생의 어떤 시기)
 
 어떤 기간과 연관된 사건
@@ -955,7 +958,7 @@ Tienes una bolsa de deportes?
 
 
 
-
+FIXME:
 < expresiones >
 
 de acuerdo
@@ -1328,7 +1331,7 @@ Este desastre empezó después de abrir la caja.
 Nos vemos después de las ocho de la tarde.
 저녁 8시 이후에 만나자.
 
-
+TODO: durante?
 durante
 
 ~동안
@@ -1424,7 +1427,7 @@ Nos hemos casado en 2014.
 Mi gato nació en 2016.
 울 고양이는 2016년에 태어났어.
 
-
+FIXME:
 < expresiones >
 
 
@@ -1630,7 +1633,7 @@ Como no tenía dinero, no pude comprarlo.
 no pude comprarlo porque no tenía dinero.
 그걸 살 수가 없었어, 돈이 없었으니까.
 
-
+FIXME: entre, excepto?
 entre
 
 ~ 사이에
@@ -1692,6 +1695,8 @@ enfrente de
 Enfrente de mi casa, hay una farmacia. 
 우리집 맞은편에 약국이 하나 있어.
 
+
+
 <hasta>
 
 hasta
@@ -1723,8 +1728,8 @@ Este tren no llega hasta Granada. tienes que ir al andén tres.
 Adiós, hasta mañana.
 안녕, 내일 보자. (내일까지 안녕)
 
-% 스페인에서 작별인사를 할 때 일상적으로 hasta luego를 주로 씁니다. 매일 만나는 사이라면 hasta mañana라고 할 수 있지요. 다시는 보기 싫은 상대에게는 hasta nunca! 라고 하기도 합니다. 
-잠시 후에 다시 만날 예정이라면 hasta ahora 라고 하기도 해요.
+스페인에서 작별인사를 할 때 일상적으로 hasta luego를 주로 씁니다. 매일 만나는 사이라면 hasta mañana라고 할 수 있지요. 다시는 보기 싫은 상대에게는 hasta nunca! 라고 하기도 합니다. 
+잠시 후에 다시 만날 예정이라면 hasta ahora 라고 하기도 합니다.
 
 
 hasta ahora
@@ -1820,11 +1825,11 @@ para + lugar (장소)
 
 도달할 수 있거나 또는 그렇지 않은 목표지점이나 사물을 가리킴
 
-My voy para el veterinario. vienes conmigo? 
+My voy para el veterinario. vienes conmigo?
 난 동물병원에 갈거야. 같이 갈래?
 
 
-para + opinión
+para + opinión (의견)
 
 ~의 의견
 
@@ -1857,7 +1862,7 @@ He comprado un reloj para mi mujer.
 => ‘와이프’에게 시계를 선물했다.
 (le 가 빠짐에 주의)
 
-
+FIXME: exp
 < expresiones >
 
 
@@ -2055,7 +2060,7 @@ Estaba ocupado todo el día y luego me di cuenta de que por dos horas ya había 
 
 
 
-
+FIXME:
 
 < expresiones >
 
@@ -2354,11 +2359,11 @@ según + modo (방법)
 방법
 
 Montamos este mueble según las instrucciones.
-설명서에 따라 이 가구를 조립한다.
+우린 설명서에 따라 이 가구를 조립한다.
 
 (= como + modo, confirme + modo)
 
-según + variación
+según + variación (변형)
 
 변형, 조건
 
@@ -2394,9 +2399,9 @@ Yo bebo café sin leche.
 No voy a ir sin tí.
 너 없이는 안 갈거야.
 
-sin + actividad
+sin + actividad (행동)
 
-sin 행동. ~하지 않고.
+~하지 않고.
 
 Está todo el día en casa sin hacer nada.
 걔는 아무것도 안 하고 집에서 종일 있어.
@@ -2430,7 +2435,7 @@ Hay que colgar esa lámpara encima de la mesa.
 
 
 
-sobre + cantidad
+sobre + cantidad (양)
 
 대략적인 양.
 
@@ -2438,7 +2443,7 @@ Si vas al supermercado, compra un paquete de harina. cuesta sobre 60 céntimos.
 마트 갈거면 밀가루 한 팩만 사와. 한 60센트 할거야.
 
 
-sobre + tema
+sobre + tema (주제)
 
 ~에 대해서.
 
@@ -2505,7 +2510,7 @@ Ya no vas al gimnasio, no?
 이제 헬스장 안 가지?
 - 어, 전에는 매일 갔는데 지금은 일주일에 달랑 한 번 가고 있어.
 
-* 사실 얘는 부사입니다. 왜 después는 전치사지? (•_•)
+* 사실 얘는 부사랍니다. 왜 después는 전치사지? (•_•)
 
 
 bajo
@@ -2603,7 +2608,7 @@ Comemos adentro o afuera? (= Comemos dentro o fuera?)
 
 
 
-
+TODO: 
 
 
 intermediate
