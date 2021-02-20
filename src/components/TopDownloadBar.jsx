@@ -30,11 +30,12 @@ const TopBar = styled.div`
 
   p {
     font-weight: 700;
-    color: #126A91;
+    color: #f85050;
   }
 
   span {
     font-size: 0.85rem;
+    color: ${props => props.theme.text};
   }
 
   img {

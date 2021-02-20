@@ -85,15 +85,15 @@ export const basicDataA = [
     tip: `* hacia + lugar 방향을 가리킴
     Estoy yendo hacia la biblioteca.
     난 도서관 방향으로 가고 있다.
-    
+    ---
     * hasta + lugar 이동의 도착지점을 가리킴 
     Este tren no va hasta Barcelona.
     이 열차는 바르셀로나까지 가지 않습니다.
-    
+    ---
     * para + lugar 도달할 수 있거나 또는 그렇지 않은 목표지점이나 사물을 가리킴
     My voy para el supermercado. vienes conmigo?
     난 마트에 갈거야. 같이 갈래?
-    
+    ---
     * por + lugar ~을 통해서 가는 방법, 수단
     El ladrón entró por la ventana.
     도둑은 창문을 통해서 들어왔다.`
@@ -163,6 +163,7 @@ export const basicDataA = [
     얼마 정도 하겠다는 어림가격 
     Este coche tan viejo lo puedes vender en 600 euros, no creo que más.
     이 낡은 차는 600 유로에 팔 수 있을거야, 더 이상은 못받을 것 같아.
+    ---
     * por + precio 
     협상(흥정)을 통해 지불한 가격
     Lo he comprado por sólo 20 euros, es bastante barato, no?
@@ -227,7 +228,7 @@ export const basicDataA = [
     어떤 사건 뒤의 일을 얘기함. 하지만 정확한 시간은 나타나 있지 않다.
     Yo he viajado mucho. en 1996 estuve en España, después en Alemania.
     난 여행을 매우 많이 했다. 1996년엔 스페인, 그 다음은 독일에 있었다.
-    
+    ---
     * siguiente
     어떤 사건의 바로 뒤에 일어난 시간을 표현. 두 사건이 관련되지는 않는다.
     La fiesta fue fantástica, pero el día siguiente fue horrible, hubo que recogerlo todo.
@@ -262,11 +263,11 @@ export const basicDataCon = [
     ],
     tip: `* conmigo, contigo, consigo 나랑 같이, 너랑 같이, 그/그녀와 같이
     * con él, con ella 그, 그녀와 같이
-    
+    ---
     * hacia + persona 어떤 사람을 향한 감정
     Siento un gran respeto hacia ella.
     나는 그녀에게 크나큰 존경심을 느낀다. 
-    
+    ---
     * por + alguien/algo 감정, 태도 등에 대한 원인
     Estoy muy preocupado por mi hijo.
     내 아들 때문에 너무 걱정이다.`
@@ -679,7 +680,7 @@ export const basicDataEn = [
     협상을 통해 얻을 수 있는 가격
     Mi vecino vende patatas de su huerta, dos kilos por un euro.
     이웃이 그의 밭에서 나온(직접 재배한) 감자를 2키로당 1유로에 팔아.
-    
+    ---
     * 전치사 없이 = 단순히 가격을 가리킴
     Esa botella cuesta 1 euro. 그 병은 1유로이다.`
   },
@@ -717,7 +718,7 @@ export const basicDataHasta = [
     tip: `* hasta que 문장
     No te preocupes por el niño, me quedo con él hasta que vuelvas.
     아이는 걱정하지마, 네가 돌아올 때까지 같이 있어줄게.
-    
+    ---
     * incluso
     어떤 이유로 제외 될 수있는 인수에 일부 요소를 추가.
     ~를 포함해서, ~도
@@ -777,11 +778,11 @@ export const basicDataHasta = [
     tip: `* hasta + lugar 이동의 도착지점을 가리킴 
     Este tren no va hasta Barcelona. 
     이 열차는 바르셀로나까지 가지 않습니다.
-    
+    ---
     * para + lugar 도달할 수 있거나 또는 그렇지 않은 목표지점이나 사물을 가리킴
     Me voy para la casa de Lucia. vienes conmigo? 
     난 루시아네 집에 갈거야. 같이 갈래?
-    
+    ---
     * por + lugar ~을 통해서 가는 방법, 수단
     El ladrón entró por la ventana. 
     도둑은 창문을 통해서 들어왔다.`
@@ -801,11 +802,11 @@ export const basicDataPara = [
     tip: `* a más tardar 시간 기한 내에 꼭 일어나야 하는 일
     Tienen que entregar los informes a más tardar el 25.
     그들은 25일까지 보고서를 제출해야만 해.
-    
+    ---
     * antes de 시간 기한
     Voy a dormir antes de que venga.
     그/녀가 오기 전에 자러 갈 거야.
-    
+    ---
     * dentro de + 시간: ~기간 안에
     Ya me voy, mi amiga va a venir dentro de un cuarto de hora.
     이제 가야겠어. 내 친구가 15분 안에 올 거야.`
@@ -822,7 +823,7 @@ export const basicDataPara = [
     tip: `* 두 동사의 목적어가 같을 때 부정사를 씀
     Voy a llamarla para saber si está bien.
     그녀가 괜찮은지 전화해 봐야겠어.
-    
+    ---
     * 두 동사의 목적어가 다를 때 접속사를 씀 = para que + 접속사
     Voy a llamarla para que ella sepa que estamos bien.
     우리가 괜찮다는 걸 그녀가 알게 하기 위해서 그녀에게 전화할 거야.`
@@ -885,7 +886,7 @@ export const basicDataPara = [
     (2) 다른 사람으로 대체 (= ~대신)
     Puedes limpiar la casa por mí, por favor?
     나 대신 집 청소해 줄 수 있어?
-
+    ---
     * a + alguien ~에게: 수신인을 가리키지만 para~ 는 수신인을 더 강조한다.
     Le he comprado un reloj a mi mujer.
     와이프에게 시계를 하나 선물했어.
@@ -945,12 +946,12 @@ export const basicDataPor = [
     tip: `* por + parte del día 날 중
     Salgo por la mañana para trabajar.
     난 아침에 일하러 나간다.
-    
+    ---
     * alrededor de + 시간
     대략적인 시간 또는 날짜.
     Vendrán alrededor de las tres.
     그들은 3시쯤에 올거야.
-    
+    ---
     * para + 날짜
     미래에 이벤트가 발생해야 하는 기간
     Necesito comprarme un portátil para este fin de semana.
@@ -987,7 +988,7 @@ export const basicDataPor = [
     por + 장소에 비해 사용 빈도가 낮다. 통과하는걸 강조하거나 폭력성을 띄기도 한다.
     No tenía la llave de casa, tenía que entrar por la ventana, pero de verdad, a través de la ventana, o sea, rompiéndola.
     집 열쇠가 없어서 창문으로 들어가야 했어. 그러니까 사실, 창문을 부수고 말이야.
-    
+    ---
     * para + 장소
     도달할 수 있거나 또는 그렇지 않은 목표지점이나 사물을 가리킴
     My voy para el pueblo. vienes conmigo?
@@ -1069,7 +1070,7 @@ export const basicDataPor = [
     변할 수 있는 가격
     Este coche lo vendía a 20 mil pero yo lo compré por 10 mil.
     이 차를 2만에 팔던데 난 1만에 샀어.
-    
+    ---
     * en + precio
     얼마 정도 하겠다는 어림가격 
     Ella quería vender su portatil en 600 euros pero al final lo vendió por la mitad de precio.
@@ -1159,7 +1160,7 @@ export const basicDataSegunAndSin = [
       }
     ],
     tip: `* 보통 ir + gerundio(현재 분사: -ando, iendo) 형태로 쓰인다.
-
+    ---
     * 미래의 행동, 이벤트를 얘기할 땐 접속사가 쓰인다. (2번째 예문)`
   },
   {
@@ -1252,7 +1253,7 @@ export const basicDataSobre = [
     tip: `* a eso de la(s) 대략적인 시간.
     El evento estará terminado a eso de las dos.
     이벤트는 한 2시 쯤 끝날 것이다.
-    
+    ---
     * alrededor de 시간/날짜.
     Vendrán después de comer, alrededor de las tres.
     그들은 점심 시간 지나고 약 3시 정도에 올 것이다.`
@@ -1287,7 +1288,7 @@ export const basicDataEtc = [
     tip: `* adelante ~앞에(다른 사물과 관련 없음)
     sigue adelante hasta el puente.
     다리까지 계속 전진해.
-    
+    ---
     * delante de ~앞에(다른 사물과 연관)
     La chica que está delante de tí es la novia de Antonio.
     네 앞에 있는 여자가 안토니오의 여자친구야.`
@@ -1320,7 +1321,7 @@ export const basicDataEtc = [
     ],
     tip: `* abajo 아래의 (다른 사물과 관련 없음)
     El salón está abajo, los dormitorios, arriba.
-    
+    ---
     * debajo de (다른 사물과 연관)
     Mi gato siempre se duerme debajo de la mesa.
     내 고양이는 항상 테이블 밑에서 잔다.`
@@ -1354,7 +1355,7 @@ export const basicDataEtc = [
     비교할 다른 사물이 필요없이 위치가 고정되어 있는 것.
     Mira, allí enfrente hay una cabaña de madera, vamos a pedir ayuda.
     봐봐, 저기 저 앞에 통나무집이 있어, 가서 도움을 요청하자.  
-    
+    ---
     * enfrente de
     추상적으로 쓸 수 있는 frente a 와는 달리 구체적인 표현에 쓰인다.
     Enfrente de la gasolinera hay una panaderia.
