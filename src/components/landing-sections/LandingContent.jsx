@@ -6,22 +6,7 @@ import LevelCard from './LevelCard'
 // landing content COMPONENT
 // Section 1
 const LandingContent = () => {
-  const SectionOne = styled.section`
-    color: ${props => props.theme.text};
-
-    .margin-bottom {
-      margin-bottom: 60px;
-    }
-
-    h2 {
-      color: ${props => props.theme.title}
-    }
-
-    .translateY {
-      transform: translateY(3px);
-    }
-  `
-
+  
   return (
     <div>
       <SectionOne className='max-width-container container-padding' id='start-quiz'>
@@ -38,21 +23,25 @@ const LandingContent = () => {
   )
 }
 
-// Section 2
-const SectionTwo = () => {
-  const Section2 = styled.section`
-    background-color: ${preps => preps.theme.graySection};
+const SectionOne = styled.section`
     color: ${props => props.theme.text};
 
-    h2 {
-      color: ${props => props.theme.title};
+    .margin-bottom {
+      margin-bottom: 60px;
     }
-  
+
+    h2 {
+      color: ${props => props.theme.title}
+    }
+
     .translateY {
-        transform: translateY(3px);
-      }
+      transform: translateY(3px);
+    }
   `
 
+// Section 2
+const SectionTwo = () => {
+  
   return(
     <Section2 className='container-padding'>
       <div className='max-width-container'>
@@ -65,5 +54,17 @@ const SectionTwo = () => {
   )
 }
 
+const Section2 = styled.section`
+    background-color: ${preps => preps.theme.graySection};
+    color: ${props => props.theme.text};
+
+    h2 {
+      color: ${props => props.theme.title};
+    }
+  
+    .translateY {
+        transform: translateY(3px);
+      }
+  `
 
 export default LandingContent

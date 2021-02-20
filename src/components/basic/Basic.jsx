@@ -6,38 +6,61 @@ import { basicDataA } from '../data/basic'
 const Basic = () => {
   return (
     <div>
-      <TopDownloadBar enlace='https://drive.google.com/file/d/1J5AQrSrptI0w3D9gjOqdqooNFEKGWvUZ/view?usp=sharing' />
+      <TopDownloadBar extraDesc='PDF 파일에는 관련된 표현들이 추가로 더 포함되어 있습니다.' enlace='https://drive.google.com/file/d/1J5AQrSrptI0w3D9gjOqdqooNFEKGWvUZ/view?usp=sharing' />
       <PrepositionTag />
       <div className='max-width-container container-padding'>
-        <h2>A</h2>
-        {
-          basicDataA.map(data => {
-            return (<div>
-              <h4>{data.title}</h4>
-              <p>{data.means}</p>
-              {data.example.map(ex => {
-                return(<div>
-                  <p>{ex.ex}</p>
-                  <p>{ex.exMean}</p>
-                </div>)
-              })}
-              <p>{data.example.ex}</p>
-              <p>{data.example.exMean}</p>
-              <p>{data.tip ? data.tip.split('\n').map(str => <p>{str}</p>) : ''}</p>
-            </div>)
-          })
-        }
+        
       </div>
     </div>
   )
 }
 
 const PrepositionTag = () => {
+
+  const showContent = prepData => {
+    return(
+      <div>
+          {
+            prepData.map(data => {
+              return (<div>
+                <h4>{data.title}</h4>
+                <div>{data.means}</div>
+                {data.example.map(ex => {
+                  return(<div>
+                    <div>{ex.ex}</div>
+                    <div>{ex.exMean}</div>
+                  </div>)
+                })}
+                <div>{data.example.ex}</div>
+                <div>{data.example.exMean}</div>
+                <div>{data.tip ? data.tip.split('\n').map(str => <p>{str}</p>) : ''}</div>
+              </div>)
+            })
+          }
+      </div>
+    )
+  }
   return(
     <div>
-      prep tags
+      <div>
+        <p>A</p>
+        <p>CON</p>
+        <p>DE</p>
+        <p>EN</p>
+        <p>HASTA</p>
+        <p>PARA</p>
+        <p>POR</p>
+        <p>SEGUN, SIN</p>
+        <p>SOBRE</p>
+        <p>ETC</p>
+      </div>
+      <div>
+        {showContent(basicDataA)}
+      </div>
     </div>
   )
 }
+
+
 
 export default Basic

@@ -4,13 +4,7 @@ import { ArrowRight } from 'react-feather'
 import { Link } from 'react-router-dom'
 
 const LevelCard = () => {
-  const LevelCardContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  `
-
+  
   return (
     <LevelCardContainer>
       <Link to='/basic-quiz'><Card level='Básico' desc='a, con, de, por, para 등 전치사의 기본적인 쓰임' /></Link>
@@ -19,9 +13,26 @@ const LevelCard = () => {
   )
 }
 
+const LevelCardContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  `
+
 // level card COMPONENT
 const Card = ({ level, desc }) => {
-  const Card = styled.div`
+  
+  return (
+    <CardStyle>
+      <h3 className='spanish-text'>{level}</h3>
+      <ArrowRight size={48} />
+      <p>{desc}</p>
+    </CardStyle>
+  )
+}
+
+const CardStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,14 +61,5 @@ const Card = ({ level, desc }) => {
       transform: translateX(10px);
     }
   `
-
-  return (
-    <Card>
-      <h3 className='spanish-text'>{level}</h3>
-      <ArrowRight size={48} />
-      <p>{desc}</p>
-    </Card>
-  )
-}
 
 export default LevelCard

@@ -3,12 +3,14 @@ import pdf from '../imgs/pdf-small.png'
 import MainBtn from './MainBtn'
 import styled from 'styled-components'
 
-const TopDownloadBar = ({ enlace }) => {
+const TopDownloadBar = ({ extraDesc, enlace }) => {
   return (
     <TopBar>
       <div className='max-width-container flex-between'>
         <div className='topbar-content flex-align-c'>
-          <span>이 문서를 PDF 파일로 다운로드</span>&nbsp;&nbsp;&nbsp;
+          <p>이 문서를 PDF 파일로 다운로드</p>&nbsp;&nbsp;&nbsp;
+          <span>{extraDesc}</span>
+          &nbsp;&nbsp;&nbsp;
           <a href={enlace} target='_blank' rel='noreferrer'><img src={pdf} alt='' /></a>
         </div>
         <MainBtn />
@@ -26,9 +28,13 @@ const TopBar = styled.div`
     height: 100%;
   }
 
-  span {
+  p {
     font-weight: 700;
     color: #126A91;
+  }
+
+  span {
+    font-size: 0.85rem;
   }
 
   img {

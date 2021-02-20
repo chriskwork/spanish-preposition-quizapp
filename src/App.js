@@ -50,6 +50,6 @@ const Container = styled.section`
   background-color: ${props => props.theme.background};
 `
 
-const MainContents = styled.section``
+const MainContents = styled.div``
 
 export default App;
