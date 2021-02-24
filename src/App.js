@@ -46,10 +46,13 @@ function App() {
 
 const Container = styled.section`
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  min-height: calc(100vh - 210px);
   background-color: ${props => props.theme.background};
 `
 
-const MainContents = styled.div``
+const MainContents = styled.div`
+  min-height: calc(100vh - 210px);
+`
 
 export default App;
