@@ -6,7 +6,11 @@ const StartQuiz = () => {
   return (
     <Section className='container-padding'>
       <div className='max-width-container'>
-        <Title>레벨을 선택하세요.</Title>
+        <Title>
+          <p className='choice-level'>레벨을 선택하세요.&nbsp;
+            <span>각 30문제(객관식)</span>
+          </p>
+        </Title>
         <LevelCard />
       </div>
     </Section>
@@ -24,6 +28,10 @@ const Title = styled.p`
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 80px;
+
+  span {
+    font-size: 1rem;
+  }
 `
 
 export default StartQuiz

@@ -26,7 +26,6 @@ const BasicQuiz = () => {
 const Quiz = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   min-height: calc(100vh - 210px);
   color: ${props => props.theme.text};
@@ -55,7 +54,6 @@ const Quiz = styled.div`
     margin: 0 1rem;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    
 
     &:hover {
       color: #F3CD50;
