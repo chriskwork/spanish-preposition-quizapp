@@ -14,13 +14,13 @@ const BasicQuiz = () => {
   const [ showCircle, setShowCircle ] = useState(null)
   const [ gameOver, setGameOver ] = useState(false)
   
-  let { id, qFront, qBack, answers, answer } = basicQuizData[question]
+  let { qFront, qBack, answers, answer } = basicQuizData[question]
+  console.log(wrongAnswer)
   
   const nextQuestion = () => {
     
     if(question <= 18) {
       setQuestion(prev => prev + 1)
-      // console.log(question)
     }else if(question === 19) {
       setGameOver(true)
     }
