@@ -8,7 +8,7 @@ const StartQuiz = () => {
       <div className='max-width-container'>
         <Title>
           <p className='choice-level'>레벨을 선택하세요.&nbsp;
-            <span>각 30문제(객관식)</span>
+            <span>각 20문제(객관식)</span>
           </p>
         </Title>
         <LevelCard />
