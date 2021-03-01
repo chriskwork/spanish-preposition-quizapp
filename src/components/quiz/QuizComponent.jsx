@@ -1,21 +1,26 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { CheckCircle, XCircle } from 'react-feather'
-import { basicQuizData } from '../data/quiz-data'
+import { basicQuizData, interQuizData } from './data/quiz-data'
+import GameOver from './GameOver'
 
-// greenCircle: <CheckCircle size={56} color={'#00cf00'} />,
-// redCircle: <XCircle size={56} color={'#e94444'} />,
-// neutral: <HelpCircle size={56} color={'#acacac'} />
-
-const BasicQuiz = () => {
+const QuizComponent = () => {
   const [ question, setQuestion ] = useState(0)
   const [ correctAnswer, setCorrectAnswer ] = useState(false)
   const [ wrongAnswer, setWrongAnswer ] = useState(false)
   const [ showCircle, setShowCircle ] = useState(null)
   const [ gameOver, setGameOver ] = useState(false)
   
-  let { qFront, qBack, answers, answer } = basicQuizData[question]
-  console.log(wrongAnswer)
+  let quizDataOfCurrentLevel;
+
+  if(window.location.pathname === '/basic-quiz') {
+    quizDataOfCurrentLevel = basicQuizData
+  }else {
+    quizDataOfCurrentLevel = interQuizData
+  }
+
+  let { qFront, qBack, answers, answer } = quizDataOfCurrentLevel[question]
+  console.log(wrongAnswer, '이걸 보시는 분이 계실까요? 😁')
   
   const nextQuestion = () => {
     
@@ -48,34 +53,37 @@ const BasicQuiz = () => {
     
       <Quiz className='max-width-container container-padding'>
 
-        { gameOver ? <div>gameOver</div> : 
-        <>
-          <div className='circle'>
-            { showCircle }
-          </div>
-          <div className='question'>
-            {qFront} &nbsp;
-            <div className='answer-box'>
-              { correctAnswer && answer }
-            </div>&nbsp; {qBack}
-          </div>
-          <div className='answers'>
-            <div className='answer' onClick={checkAnswer}>{answers[0]}</div>
-            <div className='answer' onClick={checkAnswer}>{answers[1]}</div>
-            <div className='answer' onClick={checkAnswer}>{answers[2]}</div>
-            <div className='answer' onClick={checkAnswer}>{answers[3]}</div>
-          </div>
-
-          <button onClick={nextQuestion}>다음</button>
-          
-        </>
+        { gameOver ? 
+          <GameOver /> : 
+          <>
+            <div className='circle'>
+              { showCircle }
+            </div>
+            <div className='question'>
+              <div className='front-text'>
+                {qFront} &nbsp;
+                <div className='answer-box'>
+                  { correctAnswer && answer }
+                </div>
+                &nbsp; 
+              </div>
+              <div className='back-text'>
+                {qBack}
+              </div>
+            </div>
+            <div className='answers'>
+              <div className='answer' onClick={checkAnswer}>{answers[0]}</div>
+              <div className='answer' onClick={checkAnswer}>{answers[1]}</div>
+              <div className='answer' onClick={checkAnswer}>{answers[2]}</div>
+              <div className='answer' onClick={checkAnswer}>{answers[3]}</div>
+            </div>
+            <div className='countdown'>{question + 1}/20</div>
+            <button onClick={nextQuestion}>다음</button>
+            
+          </>
         }
-        
-        
-        
-      </Quiz>
-    
-    
+
+      </Quiz> 
   )
 }
 
@@ -88,19 +96,28 @@ const Quiz = styled.div`
   
   .question {
     font-size: 1.6rem;
-    color: ${props => props.theme.title};
     margin-bottom: 3rem;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    width: 100%;
+
+    .front-text {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
 
     .answer-box {
       display: inline-block;
       text-align: center;
+      align-items: center;
       border: 1px solid #ccc;
       width: 100px;
       height: 40px;
       margin: 0 8px;
+      color: ${props => props.theme.title};
     }
   }
 
@@ -120,15 +137,18 @@ const Quiz = styled.div`
       color: #F3CD50;
       border-color: #F3CD50;
     }
-
     
   }
 
   .circle {
     width: 60px;
     height: 60px;
-    margin-bottom: 3rem;
-    
+    margin-bottom: 3rem;  
+  }
+
+  .countdown {
+    margin: 8px 0;
+    font-size: 0.85rem;
   }
 
   button {
@@ -138,6 +158,7 @@ const Quiz = styled.div`
     background-color: #5CBDE8;
     border-radius: 10px;
     color: #fff;
+    font-weight: 700;
 
     &:hover {
       background-color: #126A91;
@@ -147,4 +168,4 @@ const Quiz = styled.div`
 `
 
 
-export default BasicQuiz
+export default QuizComponent

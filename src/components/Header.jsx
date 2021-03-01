@@ -9,7 +9,7 @@ const Header = () => {
       <div className='max-width-container header-content'>
         <Copyright>
           <p className='copyright'>스페인어 전치사<br />마스터하기</p>
-          <MainBtn />
+          <MainBtn btnText='퀴즈 시작하기' />
         </Copyright>
         <img src={mainDesk} alt='' />
       </div>

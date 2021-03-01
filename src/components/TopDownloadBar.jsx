@@ -13,7 +13,7 @@ const TopDownloadBar = ({ extraDesc, enlace }) => {
           &nbsp;&nbsp;&nbsp;
           <a href={enlace} target='_blank' rel='noreferrer'><img src={pdf} alt='' /></a>
         </div>
-        <MainBtn />
+        <MainBtn btnText='퀴즈 시작하기' />
       </div>
     </TopBar>
   )

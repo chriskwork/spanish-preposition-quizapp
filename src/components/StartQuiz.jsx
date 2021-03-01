@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import LevelCard from '../components/landing-sections/LevelCard'
+import LevelCard from './landing-sections/LevelCard'
 
 const StartQuiz = () => {
   return (
@@ -22,7 +22,7 @@ const Section = styled.section`
   min-height: calc(100vh - 210px);
 `
 
-const Title = styled.p`
+const Title = styled.div`
   text-align: center;
   color: ${preps => preps.theme.title};
   font-size: 1.4rem;

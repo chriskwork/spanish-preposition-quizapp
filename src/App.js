@@ -10,11 +10,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Landing from './components/Landing'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
-import Basic from './components/basic/Basic'
-import Intermediate from './components/intermediate/Intermediate'
+import Basic from './components/quiz/basic/Basic'
+import Intermediate from './components/quiz/intermediate/Intermediate'
 import StartQuiz from './components/StartQuiz'
-import BasicQuiz from './components/basic/BasicQuiz'
-import IntermediateQuiz from './components/intermediate/IntermediateQuiz'
+import QuizComponent from './components/quiz/QuizComponent'
 import Donation from './components/Donation'
 
 function App() {
@@ -31,8 +30,8 @@ function App() {
               <Route path='/start-quiz' component={StartQuiz} />
               <Route path='/basic-prepositions' component={Basic} />
               <Route path='/intermediate-prepositions' component={Intermediate} />
-              <Route path='/basic-quiz' component={BasicQuiz} />
-              <Route path='/intermediate-quiz' component={IntermediateQuiz} />
+              <Route path='/basic-quiz' component={QuizComponent} />
+              <Route path='/intermediate-quiz' component={QuizComponent} />
               <Route path='/donation' component={Donation} />
             </Switch>
           </MainContents>

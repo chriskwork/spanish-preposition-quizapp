@@ -1,5 +1,5 @@
 import React from 'react'
-import TopDownloadBar from '../TopDownloadBar'
+import TopDownloadBar from '../../TopDownloadBar'
 import InterPrepositionTag from './InterPrepositionTag'
 
 const Intermediate = () => {
