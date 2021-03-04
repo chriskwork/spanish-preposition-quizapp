@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <FooterStyle>
-      <div className='max-width-container flex-between'>
+      <div className='max-width-container footer-content'>
         <p>카페콘레체</p>
         <div className='social-media'>
           <a href='https://www.youtube.com/channel/UCYZ2YcGbV97dfbBA20QZwrg' target='_blank' rel='noreferrer'>YouTube</a>
@@ -26,6 +26,12 @@ const FooterStyle = styled.footer`
     justify-content: center;
     align-items: center;
 
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     p {
       font-size: 0.95rem;
       font-weight: 700;
@@ -38,6 +44,29 @@ const FooterStyle = styled.footer`
 
       &:hover {
         color: #F3CD50;
+      }
+    }
+
+    
+    @media (max-width: 959px) {
+      .footer-content {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .social-media {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1rem;
+      }
+
+      .social-media a {
+        margin-left: 0;
+        width: 33.3%;
+        text-align: center;
       }
     }
   `

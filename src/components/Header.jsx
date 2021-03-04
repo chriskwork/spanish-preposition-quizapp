@@ -5,7 +5,7 @@ import MainBtn from './MainBtn'
 
 const Header = () => {
   return (
-    <Div>
+    <HeaderStyle>
       <div className='max-width-container header-content'>
         <Copyright>
           <p className='copyright'>스페인어 전치사<br />마스터하기</p>
@@ -13,11 +13,11 @@ const Header = () => {
         </Copyright>
         <img src={mainDesk} alt='' />
       </div>
-    </Div>
+    </HeaderStyle>
   )
 }
 
-const Div = styled.header`
+const HeaderStyle = styled.header`
   width: 100%;
   height: 520px;
   /* background-image: radial-gradient(circle, #2283AE 50%, #126A91 100%); */
@@ -37,6 +37,23 @@ const Div = styled.header`
     position: absolute;
     top: 0;
     right: 0;
+    }
+  }
+
+  @media (max-width: 959px) {
+    height: 80vh;
+
+    .header-content {
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+
+      img {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        transform: translateY(-5%);
+      }
     }
   }
 `

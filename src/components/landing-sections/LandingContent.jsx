@@ -37,6 +37,10 @@ const SectionOne = styled.section`
     .translateY {
       transform: translateY(3px);
     }
+
+    @media (max-width: 959px) {
+      text-align: center;
+    }
   `
 
 // Section 2
@@ -47,7 +51,8 @@ const SectionTwo = () => {
       <div className='max-width-container'>
         <h2><Info className='translateY' /> 잘못된 부분이 있나요?</h2>
           <p>피드백은 언제나 환영합니다! (기부도 언제나 환영합니다 😁)<br />
-            잘못된 부분을 발견하셨거나 궁금한 점이 있으시다면 yoh00purple@gmail.com으로 이메일을 보내주세요. (숫자 0 두 개)
+            잘못된 부분을 발견하셨거나 궁금한 점이 있으시다면 <a href='https://www.youtube.com/watch?v=TDVqeZHO04Q' target='_blank' rel='noreferrer'>'여기'</a>에 댓글로 남겨주세요!
+            
           </p>
       </div>
     </Section2>
@@ -65,6 +70,10 @@ const Section2 = styled.section`
     .translateY {
         transform: translateY(3px);
       }
+
+    @media (max-width: 959px) {
+      text-align: center;
+    }
   `
 
 export default LandingContent

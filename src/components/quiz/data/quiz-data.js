@@ -116,7 +116,7 @@ export const basicQuizData = [
   },
   {
     id: 17,
-    qFront: 'Yo vivo en esta ciudad desde',
+    qFront: 'Yo vivo en esta ciudad',
     qBack: '2010.',
     answers: ['desde', 'de', 'a', 'para'],
     answer: 'desde'

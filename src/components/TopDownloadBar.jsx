@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const TopDownloadBar = ({ extraDesc, enlace }) => {
   return (
     <TopBar>
-      <div className='max-width-container flex-between'>
+      <div className='max-width-container flex-between tablet-size'>
         <div className='topbar-content flex-align-c'>
           <p>이 문서를 PDF 파일로 다운로드</p>&nbsp;&nbsp;&nbsp;
           <span>{extraDesc}</span>
@@ -44,6 +44,12 @@ const TopBar = styled.div`
 
     &:hover {
       transform: scale(1.1);
+    }
+  }
+
+  @media (min-width: 960px) and (max-width: 1195px) {
+    .tablet-size {
+      padding: 0 40px;
     }
   }
 

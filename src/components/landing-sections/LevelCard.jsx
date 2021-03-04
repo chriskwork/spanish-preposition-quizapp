@@ -18,6 +18,11 @@ const LevelCardContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
+    @media (max-width: 959px) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
   `
 
 // level card COMPONENT
@@ -59,6 +64,10 @@ const CardStyle = styled.div`
 
     &:hover svg {
       transform: translateX(10px);
+    }
+
+    @media (min-width: 960px) and (max-width: 1195px) {
+      width: 360px;
     }
   `
 

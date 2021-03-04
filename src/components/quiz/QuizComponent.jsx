@@ -98,10 +98,14 @@ const Quiz = styled.div`
     font-size: 1.6rem;
     margin-bottom: 3rem;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 1.5rem;
+
+    @media (min-width: 960px) and (max-width: 1195px) {
+      flex-direction: column;
+    }
 
     .front-text {
       display: flex;

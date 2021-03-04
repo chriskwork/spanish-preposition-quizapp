@@ -8,6 +8,7 @@
 
 /* font-family: 'Noto Sans', sans-serif;
 font-family: 'Noto Sans KR', sans-serif; */
+
 html {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 100%;
@@ -19,6 +20,7 @@ a {
   line-height: 1.5;
 }
 
+/* @media: more than 1196px */
 .max-width-container {
   max-width: 1196px;
   width: 100%;
@@ -50,4 +52,29 @@ h2 {
 .flex-align-c {
   display: flex;
   align-items: center;
+}
+
+/* for tablet size */
+@media (min-width: 960px) and (max-width: 1195px) {
+  .max-width-container {
+    min-width: 960px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 959px) {
+  .max-width-container {
+    min-width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    display: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

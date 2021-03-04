@@ -31,7 +31,7 @@ const BasicPrepositionTag = () => {
   }
 
   return(
-    <div className='max-width-container'>
+    <div className='max-width-container tablet-container'>
       {/* FIXME: need refactoring */}
       <PrepTag>
         <p onClick={(e) => {
@@ -94,12 +94,14 @@ const BasicPrepositionTag = () => {
 
 export const PrepTag = styled.div`
   width: 100%;
-  height: 100px;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 40px 0;
+  padding: 20px 0;
+  font-size: 0.8rem;
 
   p {
     padding: 0.5rem 1.5rem;
@@ -186,6 +188,11 @@ export const ContentContainer = styled.div`
     font-size: 0.85rem;
     background-color: ${props => props.theme.graySection};
     padding: 1rem;
+  }
+
+  @media (min-width: 960px) and (max-width: 1195px) {
+    
+    
   }
 `
 
