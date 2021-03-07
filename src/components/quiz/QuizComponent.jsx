@@ -61,11 +61,12 @@ const QuizComponent = () => {
             </div>
             <div className='question'>
               <div className='front-text'>
-                {qFront} &nbsp;
+                {qFront}
+
                 <div className='answer-box'>
                   { correctAnswer && answer }
                 </div>
-                &nbsp; 
+
               </div>
               <div className='back-text'>
                 {qBack}
@@ -95,7 +96,7 @@ const Quiz = styled.div`
   color: ${props => props.theme.text};
   
   .question {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: center;
@@ -103,14 +104,24 @@ const Quiz = styled.div`
     width: 100%;
     gap: 1.5rem;
 
-    @media (min-width: 960px) and (max-width: 1195px) {
+    @media (max-width: 1195px) {
       flex-direction: column;
+      text-align: center;
+    }
+
+    @media (max-width: 479px) {
+      font-size: 1.2rem;
     }
 
     .front-text {
       display: flex;
       justify-content: center;
-      align-items: center; 
+      align-items: center;
+
+      @media (max-width: 479px) {
+        flex-direction: column;
+        text-align: center;
+      }
     }
 
     .answer-box {
@@ -122,6 +133,19 @@ const Quiz = styled.div`
       height: 40px;
       margin: 0 8px;
       color: ${props => props.theme.title};
+
+      @media (max-width: 479px) {
+        margin: 1rem 0.5rem 0rem 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .back-text {
+    @media (max-width: 479px) {
+      margin-top: -1rem;
     }
   }
 
@@ -129,25 +153,34 @@ const Quiz = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 
-  .answer {
-    margin: 0 1rem 5rem 1rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
+    .answer {
+      margin: 0 1rem 5rem 1rem;
+      cursor: pointer;
+      padding: 0.5rem 0.8rem;
+      border: 1px solid #ccc;
+  
+      &:hover {
+        color: #F3CD50;
+        border-color: #F3CD50;
+      }
 
-    &:hover {
-      color: #F3CD50;
-      border-color: #F3CD50;
+      @media (max-width: 479px) {
+        margin: 0 0.5rem 3rem 0.5rem;
+      }
+
     }
-    
+
   }
 
   .circle {
     width: 60px;
     height: 60px;
-    margin-bottom: 3rem;  
+    margin-bottom: 3rem;
+
+    @media (max-width: 479px) {
+        margin-bottom: 1rem;
+      }
   }
 
   .countdown {

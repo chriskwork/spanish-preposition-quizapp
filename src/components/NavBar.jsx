@@ -91,6 +91,11 @@ const NavStyle = styled.nav`
   img {
     width: 70px;
     height: 70px;
+
+    @media (max-width: 479px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   .nav-container {

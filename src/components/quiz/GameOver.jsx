@@ -19,6 +19,10 @@ const GameOverStyle = styled.div`
     font-weight: 700;
     color: ${props => props.theme.title};
     margin-bottom: 3rem;
+
+    @media (max-width: 479px) {
+      font-size: 1.5rem;
+    }
   }
 `
 

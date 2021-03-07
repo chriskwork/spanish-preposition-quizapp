@@ -22,6 +22,10 @@ const Button = styled.button`
   &:hover {
     background-color: #e6bf3f;
   }
+
+  @media (max-width: 479px) {
+    display: none;
+  }
 `
 
 export default MainBtn

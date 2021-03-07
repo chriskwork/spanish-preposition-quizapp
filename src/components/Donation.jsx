@@ -49,6 +49,10 @@ const DonationStyle = styled.div`
     font-size: 2rem;
     color: ${props => props.theme.title};
     font-weight: 700;
+
+    @media (max-width: 479px) {
+      font-size: 1.5rem;
+    }
   }
 
   .donate-method {

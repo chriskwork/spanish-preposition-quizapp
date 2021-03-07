@@ -49,10 +49,19 @@ const HeaderStyle = styled.header`
       text-align: center;
 
       img {
-        width: 400px;
+        width: auto;
         height: 400px;
         position: relative;
         transform: translateY(-5%);
+      }
+    }
+  }
+
+  @media (max-width: 479px) {
+    .header-content {
+      img {
+        height: 280px;
+        min-height: 260px;
       }
     }
   }
@@ -66,6 +75,14 @@ const Copyright = styled.div`
     font-weight: 700;
     color: #f1f1f1;
     margin-bottom: 2rem;
+
+    @media (max-width: 479px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 2rem;
+    }
   }
 `
 

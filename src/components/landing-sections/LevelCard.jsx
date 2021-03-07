@@ -66,8 +66,14 @@ const CardStyle = styled.div`
       transform: translateX(10px);
     }
 
-    @media (min-width: 960px) and (max-width: 1195px) {
-      width: 360px;
+    @media (max-width: 1195px) {
+      width: 400px;
+    }
+
+    @media (max-width: 479px) {
+      width: 320px;
+      min-width: 300px;
+      padding: 0 10px;
     }
   `
 
