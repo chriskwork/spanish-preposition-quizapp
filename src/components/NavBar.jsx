@@ -165,7 +165,7 @@ const NavStyle = styled.nav`
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
       opacity: 0;
       pointer-events: none;
-      transition: opacity 500ms;
+      transition: opacity 250ms;
 
       &.nav-links-mobile-show {
         opacity: 1;

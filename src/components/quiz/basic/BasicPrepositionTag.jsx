@@ -190,10 +190,6 @@ export const ContentContainer = styled.div`
     padding: 1rem;
   }
 
-  @media (min-width: 960px) and (max-width: 1195px) {
-    
-    
-  }
 `
 
 export default BasicPrepositionTag

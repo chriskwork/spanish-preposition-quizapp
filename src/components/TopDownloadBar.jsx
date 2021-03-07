@@ -14,7 +14,9 @@ const TopDownloadBar = ({ extraDesc, enlace }) => {
           </div>
           <a href={enlace} target='_blank' rel='noreferrer'><img src={pdf} alt='' /></a>
         </div>
-        <MainBtn btnText='퀴즈 시작하기' />
+        <div className='quiz-start-btn'>
+          <MainBtn btnText='퀴즈 시작하기' />
+        </div>
       </div>
     </TopBar>
   )
@@ -78,6 +80,10 @@ const TopBar = styled.div`
     }
 
     .download-pdf span {
+      display: none;
+    }
+
+    .quiz-start-btn {
       display: none;
     }
   }
