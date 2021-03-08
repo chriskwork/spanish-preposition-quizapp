@@ -7,8 +7,12 @@ const LevelCard = () => {
   
   return (
     <LevelCardContainer>
-      <Link to='/basic-quiz' className='topcard'><Card level='Básico' desc='a, con, de, por, para 등 전치사의 기본적인 쓰임' /></Link>
-      <Link to='/intermediate-quiz'><Card level='Intermedio' desc='이 동사는 어떤 전치사랑 같이 써야 하나요?' /></Link>
+      <div className='level-card topcard'>
+        <Link to='/basic-quiz'><Card level='Básico' desc='a, con, de, por, para 등 전치사의 기본적인 쓰임' /></Link>
+      </div>
+      <div className='level-card'>
+        <Link to='/intermediate-quiz'><Card level='Intermedio' desc='이 동사는 어떤 전치사랑 같이 써야 하나요?' /></Link>
+      </div>
     </LevelCardContainer>
   )
 }
@@ -26,7 +30,7 @@ const LevelCardContainer = styled.div`
 
     @media (max-width: 479px) {
       gap: 0;
-      a {
+      .level-card {
         width: 100%;
       }
       .topcard {
