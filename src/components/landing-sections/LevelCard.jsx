@@ -9,7 +9,7 @@ const LevelCard = () => {
     <LevelCardContainer>
       <Link to='/basic-quiz'><Card level='Básico' desc='a, con, de, por, para 등 전치사의 기본적인 쓰임' /></Link>
       <Link to='/intermediate-quiz'><Card level='Intermedio' desc='이 동사는 어떤 전치사랑 같이 써야 하나요?' /></Link>
-  </LevelCardContainer>
+    </LevelCardContainer>
   )
 }
 
@@ -17,11 +17,17 @@ const LevelCardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 
     @media (max-width: 959px) {
       flex-direction: column;
       gap: 1.5rem;
+    }
+
+    @media (max-width: 479px) {
+      a {
+        width: 100%;
+      }
     }
   `
 
@@ -71,9 +77,8 @@ const CardStyle = styled.div`
     }
 
     @media (max-width: 479px) {
-      width: 290px;
       padding: 0 10px;
-      gap: 1.2rem;
+      width: 100%;
     }
   `
 
