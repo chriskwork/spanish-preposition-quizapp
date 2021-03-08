@@ -25,9 +25,13 @@ const LevelCardContainer = styled.div`
     }
 
     @media (max-width: 479px) {
-      gap: 5rem;
+      gap: 0;
       a {
         width: 100%;
+        
+        &:nth-child(1) {
+          margin-bottom: 1.5rem;
+        }
       }
     }
   `
