@@ -73,6 +73,7 @@ const CardStyle = styled.div`
     @media (max-width: 479px) {
       width: 290px;
       padding: 0 10px;
+      gap: 1.2rem;
     }
   `
 
