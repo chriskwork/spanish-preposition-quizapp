@@ -17,9 +17,9 @@ import QuizComponent from './components/quiz/QuizComponent'
 import Donation from './components/Donation'
 
 function App() {
-  window.addEventListener("resize", function() {
-    console.log(window.innerWidth);
-});
+//   window.addEventListener("resize", function() {
+//     console.log(window.innerWidth);
+// });
 
   return (
     <ThemeStore> {/* Theme Provider */}

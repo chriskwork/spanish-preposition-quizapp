@@ -102,7 +102,7 @@ const Quiz = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
 
     @media (max-width: 1195px) {
       flex-direction: column;
@@ -131,7 +131,7 @@ const Quiz = styled.div`
       border: 1px solid #ccc;
       width: 100px;
       height: 40px;
-      margin: 0 8px;
+      margin: 0 12px;
       color: ${props => props.theme.title};
 
       @media (max-width: 479px) {
