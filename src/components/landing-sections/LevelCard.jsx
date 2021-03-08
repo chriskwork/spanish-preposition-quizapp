@@ -25,6 +25,7 @@ const LevelCardContainer = styled.div`
     }
 
     @media (max-width: 479px) {
+      gap: 5rem;
       a {
         width: 100%;
       }
