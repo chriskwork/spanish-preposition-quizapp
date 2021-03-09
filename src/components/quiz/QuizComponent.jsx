@@ -118,6 +118,10 @@ const Quiz = styled.div`
       justify-content: center;
       align-items: center;
 
+      @media (max-width: 1195px) {
+        margin-bottom: 0.9rem;
+      }
+
       @media (max-width: 479px) {
         flex-direction: column;
         text-align: center;
@@ -145,7 +149,7 @@ const Quiz = styled.div`
 
   .back-text {
     @media (max-width: 479px) {
-      margin-top: -1rem;
+      /* margin-top: -1rem; */
     }
   }
 

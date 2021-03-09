@@ -21,6 +21,8 @@ const LevelCardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     gap: 2rem;
 
     @media (max-width: 959px) {
